@@ -394,7 +394,7 @@ def add_month(d, increment=1):
     day = d.day
     max_day = monthrange(int(year), int(month))[1]
     day = min(day, max_day)
-    return date(month=month, year=year, day=day)
+    return date(month=int(month), year=int(year), day=int(day))
 
 
 def pop_cashflows_until(sorted_cashflows, until):
