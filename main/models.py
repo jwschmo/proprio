@@ -340,7 +340,7 @@ def first_of_month_range(start_date, end_date):
     for index in range(start_index, end_index):
         month = (index - 1) % 12 + 1
         year = (index - 1) / 12
-        yield date(year, month, 1)
+        yield date(int(year), int(month), 1)
 
 
 TWOPLACES = Decimal('0.00')
