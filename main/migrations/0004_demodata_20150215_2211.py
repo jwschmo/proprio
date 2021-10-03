@@ -32,7 +32,7 @@ def create_demo_data(apps, schema_editor):
         address="23 rue de la maréchaussée", area=103, rooms=4)
     tenant1 = Tenant.objects.create(
         property=property1, name="Paul Bismuth",
-        tenancy_begin_date=next_month(int(date.today()), -5))
+        tenancy_begin_date=next_month(date.today(), -5))
     rent1 = RentRevision.objects.create(
         tenant=tenant1, start_date=tenant1.tenancy_begin_date,
         rent=1700, provision=100)
