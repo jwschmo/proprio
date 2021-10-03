@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from forms import GenerateForm, SubmitForm
+from .forms import GenerateForm, SubmitForm
 from django.http import HttpResponse, Http404, HttpResponseBadRequest
 from django.utils.translation import ugettext as _, ugettext_lazy
 from django.db import transaction
