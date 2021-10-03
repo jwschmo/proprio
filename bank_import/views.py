@@ -17,7 +17,7 @@ import re
 import datetime
 import itertools
 from collections import defaultdict
-from models import ImportedLine
+from .models import ImportedLine
 
 
 IMPORTER_SETTINGS = 'PROPRIO_IMPORT_PARSERS'
