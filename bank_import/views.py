@@ -5,7 +5,7 @@ from django.http import HttpResponse, Http404, HttpResponseBadRequest
 from django.utils.translation import ugettext as _, ugettext_lazy
 from django.db import transaction
 from main.models import Tenant, Payment
-from from_settings import get_element
+from .from_settings import get_element
 from whoosh.filedb.filestore import RamStorage
 from whoosh.fields import TEXT, NUMERIC, Schema
 from whoosh.query import Term, Or
