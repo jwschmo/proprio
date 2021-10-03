@@ -392,7 +392,7 @@ def add_month(d, increment=1):
     year = d.year + month / 12
     month = month % 12 + 1
     day = d.day
-    max_day = monthrange(year, month)[1]
+    max_day = monthrange(int(year), int(month))[1]
     day = min(day, max_day)
     return date(month=month, year=year, day=day)
 
